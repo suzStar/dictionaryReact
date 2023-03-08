@@ -8,12 +8,13 @@ function Dictionary() {
 
   function search(event) {
     event.preventDefault();
-    let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    let apiKey = "d04fb3e0250t4fa0be3579oeba197b2c";
+    let apiURL = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiURL).then(handleResponse);
   }
 
   function handleResponse(response) {
-    setDefinition(response.data[0]);
+    setDefinition(response.data);
   }
 
   function handleKeywordInput(event) {
@@ -22,21 +23,17 @@ function Dictionary() {
   }
   return (
     <div className="Dictionary">
-      <form onSubmit={search}>
-        <div className="input-group mb-3">
-          <input
-            type="search"
-            className="form-control"
-            onChange={handleKeywordInput}
-            placeholder="What word do you want to look up?"
-            aria-label="What word do you want to look up?"
-          />
-          <div className="input-group-">
-            <button className="btn btn-primary" type="button">
-              Search
-            </button>
-          </div>
-        </div>
+      <form onSubmit={search} className="d-flex">
+        <input
+          className="form-control mr-5"
+          type="search"
+          onChange={handleKeywordInput}
+          placeholder="What word do you want to look up?"
+          aria-label="What word do you want to look up?"
+        />{" "}
+        <button className="btn btn-primary w-25" type="submit">
+          Search
+        </button>{" "}
       </form>
       <Results data={definition} />
     </div>

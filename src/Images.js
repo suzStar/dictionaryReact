@@ -1,7 +1,7 @@
 import React from "react";
 
 function Images(props) {
-  return <div>props.data.word</div>;
+  return null;
 }
 
 export default Images;

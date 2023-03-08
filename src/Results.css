@@ -1,0 +1,41 @@
+.Results {
+    text-align: left;
+    margin: 0 30px;
+}
+
+button {
+    margin-left: 20px;
+}
+
+.wordSearched {
+    font-size: 60px;
+    text-transform: capitalize;
+}
+
+.phonetic {
+    line-height: 70px;
+    font-size: 45px;
+    color: #ff5722;
+    ;
+    text-align: center;
+}
+
+.headers {
+    text-transform: capitalize;
+    font-size: 26px;
+    text-align: right;
+    color: #ff5722;
+    ;
+}
+
+.subheader {
+    text-align: right;
+    color: #8d8f90;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+}
