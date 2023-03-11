@@ -1,13 +1,21 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0D1B2A;
+}
+
 .App {
   font-family: 'Quicksand', sans-serif;
   position: relative;
   margin-top: 30px;
   width: 1024px;
   height: 700px;
-  border: 10px solid #2d4059;
+  border: 10px solid #4F5D75;
   border-radius: 10px;
-  background-color: #222831;
-    color: #eeeeee;
+  background-color: #2D3142;
+  color: #E0FBFC;
 }
 
 h1 {
@@ -20,6 +28,18 @@ h1 {
 form {
   margin: 0 40px;
   font-weight: 800;
+}
+
+.btn-primary {
+  color: #293241;
+  background-color: #EE6C4D;
+  border-color: #293241
+}
+
+.btn-primary:hover {
+  color: #EE6C4D;
+  background-color: #293241;
+  border-color: #EE6C4D
 }
 
 footer {

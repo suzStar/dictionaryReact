@@ -1,0 +1,13 @@
+.Synonyms .subheader {
+    text-align: right;
+    color: #98C1D9;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Synonyms li {
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 10px;
+    color: #EE6C4D;
+}
