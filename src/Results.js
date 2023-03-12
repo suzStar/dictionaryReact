@@ -3,7 +3,6 @@ import "./Results.css";
 import WordPhonetic from "./WordPhonetic";
 import Meaning from "./Meaning";
 
-
 function Results(props) {
   if (props.data) {
     return (
@@ -13,11 +12,10 @@ function Results(props) {
           {props.data.meanings.map(function (meaning, index) {
             return (
               <section key={index}>
-                <Meaning meaningData={meaning} />
+                <Meaning meaningData={meaning} photos={props.photoData} />
               </section>
             );
           })}
-          
         </div>
       </div>
     );

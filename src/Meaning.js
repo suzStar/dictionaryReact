@@ -16,7 +16,7 @@ function Meanings(props) {
         <hr />
       </div>
       <div className="col-3">
-        <Images />
+        <Images photo={props.photos} />
       </div>
     </div>
   );
