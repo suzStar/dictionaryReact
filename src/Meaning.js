@@ -3,6 +3,7 @@ import SpeechMeaning from "./SpeechMeaning";
 import Synonyms from "./Synonyms";
 import Example from "./Example";
 import Images from "./Images";
+import "./Images.css";
 
 function Meanings(props) {
   return (
@@ -15,7 +16,7 @@ function Meanings(props) {
         </div>
         <hr />
       </div>
-      <div className="col-4">
+      <div className="col-4 img-scroll">
         <Images photos={props.photos} />
       </div>
     </div>
