@@ -31,9 +31,29 @@ function Dictionary() {
   function handleKeywordInput(event) {
     event.preventDefault();
     setKeyword(event.target.value);
+    search();
   }
-  return (
-    <div className="Dictionary">
+
+  if (definition) {
+    return (
+      <div className="Dictionary">
+        <form onSubmit={search} className="testing d-flex">
+          <input
+            className="form-control mr-5"
+            type="search"
+            onChange={handleKeywordInput}
+            placeholder="What word do you want to look up?"
+            aria-label="What word do you want to look up?"
+          />{" "}
+          <button className="btn btn-primary w-25" type="submit">
+            Search
+          </button>{" "}
+        </form>
+        <Results data={definition} photoData={photos} />
+      </div>
+    );
+  } else {
+    return (
       <form onSubmit={search} className="testing d-flex">
         <input
           className="form-control mr-5"
@@ -46,9 +66,8 @@ function Dictionary() {
           Search
         </button>{" "}
       </form>
-      <Results data={definition} photoData={photos} />
-    </div>
-  );
+    );
+  }
 }
 
 export default Dictionary;
