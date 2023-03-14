@@ -34,7 +34,7 @@ function Dictionary() {
   }
   return (
     <div className="Dictionary">
-      <form onSubmit={search} className="d-flex">
+      <form onSubmit={search} className="testing d-flex">
         <input
           className="form-control mr-5"
           type="search"

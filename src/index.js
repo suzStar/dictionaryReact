@@ -9,6 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
+    <footer>Coded by Suzanne Sharman </footer>
   </React.StrictMode>
 );
 

@@ -5,11 +5,12 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App container">
-      <h1>Dictionary</h1>
-      <main>
-        <Dictionary />
-      </main>
-      <footer>Coded by Suzanne Sharman </footer>
+      <div className="pageOpener">
+        <h1>Dictionary</h1>
+        <main>
+          <Dictionary />
+        </main>
+      </div>
     </div>
   );
 }

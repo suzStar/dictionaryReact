@@ -3,13 +3,19 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: auto 0;
   background-color: #0D1B2A;
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   font-family: 'Quicksand', sans-serif;
   position: relative;
-  margin-top: 30px;
+
+  margin-top: 60px;
   width: 1024px;
   height: 700px;
   border: 10px solid #4F5D75;
@@ -25,9 +31,14 @@ h1 {
   font-size: 62px;
 }
 
+.pageOpener {
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+}
+
 form {
   margin: 0 40px;
-  font-weight: 800;
 }
 
 .btn-primary {
