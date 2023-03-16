@@ -4,10 +4,10 @@ import "./Photos.css";
 function Photos(props) {
   if (props.photos) {
     return (
-      <div className="Photos imageContainer">
+      <div className="Photos row">
         {props.photos.photos.map(function (photo, index) {
           return (
-            <div key={index}>
+            <div className="col-6 col-sm-6 col-md-12" key={index}>
               <a href={photo.url} target="_blank" rel="noreferrer">
                 <img
                   className="img-fluid"

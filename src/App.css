@@ -1,8 +1,4 @@
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin: auto 0;
   background-color: #0D1B2A;
 }
@@ -57,4 +53,22 @@ footer {
   position: absolute;
   bottom: 0px;
   margin: 10px auto;
+}
+
+@media (max-width: 575px) {
+  .App {
+    width: 475px;
+  }
+
+    form {
+      margin: 0 30px;
+    }
+
+  .btn-primary {
+    width: 50px;
+  }
+
+  footer {
+    display: none;
+  }
 }

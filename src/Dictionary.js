@@ -37,7 +37,7 @@ function Dictionary() {
   if (definition) {
     return (
       <div className="Dictionary">
-        <form onSubmit={search} className="testing d-flex">
+        <form onSubmit={search} className="d-flex">
           <input
             className="form-control mr-5"
             type="search"
@@ -54,7 +54,7 @@ function Dictionary() {
     );
   } else {
     return (
-      <form onSubmit={search} className="testing d-flex">
+      <form onSubmit={search} className="d-flex justify-content-center">
         <input
           className="form-control mr-5"
           type="search"
