@@ -50,9 +50,7 @@ form {
 }
 
 footer {
-  position: absolute;
-  bottom: 0px;
-  margin: 10px auto;
+  
 }
 
 @media (max-width: 575px) {

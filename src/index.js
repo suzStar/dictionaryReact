@@ -9,7 +9,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-    <footer>Coded by Suzanne Sharman </footer>
+    <footer>
+      Coded by{" "}
+      <a href="https://github.com/suzStar/dictionaryReact">Suzanne Sharman</a>
+    </footer>
   </React.StrictMode>
 );
 
