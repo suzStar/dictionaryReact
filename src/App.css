@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  align-items: center;
   font-family: 'Quicksand', sans-serif;
   position: relative;
 
@@ -20,6 +20,14 @@ body {
   color: #E0FBFC;
 }
 
+.Dictionary {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
 h1 {
   margin: 20px auto;
   text-align: center;
@@ -30,7 +38,7 @@ h1 {
 .pageOpener {
   position: absolute;
   width: 100%;
-  bottom: 5%;
+  margin-bottom: 30px;
 }
 
 form {
@@ -49,18 +57,14 @@ form {
   border-color: #EE6C4D
 }
 
-footer {
-  
-}
-
 @media (max-width: 575px) {
   .App {
     width: 475px;
   }
 
-    form {
-      margin: 0 30px;
-    }
+  form {
+    margin: 0 30px;
+  }
 
   .btn-primary {
     width: 50px;
